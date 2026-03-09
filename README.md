@@ -2,7 +2,7 @@
 Laboratory Work 2 - End-to-End Data Analytics in Power BI: From Data Cleaning to DAX Insights
 
 # PDF Documentation
-https://drive.google.com/file/d/1EHI1uIRzz6WdyqE3z37BjLwSXWFNtgEb/view?usp=sharing<br><br>
+https://drive.google.com/file/d/1UXd5wrSNzSaU33OF96Htz7JpFOXhCvRf/view?usp=sharing<br><br>
 
 Part 1: Open Power Query Editor<br><br>
 
@@ -92,36 +92,50 @@ Guide Questions<br><br>
 
 # Enhancement Activities
 ● Create a data quality checklist for future datasets.<br>
-● Compare dataset size before and after cleaning.<br>
+- Ensure there are no missing values in important fields.<br>
+- Verify that data values are correct and realistic.<br>
+- Data format should be the same (e.g., date format, capitalization).	<br>
+- Remove repeated records in the dataset.	<br>
+- Columns should have the correct type (number, text, date).<br>	
+- Values should fall within acceptable limits.<br>	
+- Categories should be uniform.<br>
+- Remove leading or trailing spaces in text fields.<br><br>
+
+  ● Compare dataset size before and after cleaning.<br>
+  Before cleaning the dataset:<br>
+<img width="492" height="25" alt="image" src="https://github.com/user-attachments/assets/6dfcffc2-0cc3-4ff7-b328-238a9160fa8d" /><br><bR>
+
+After cleaning the dataset:<br>
+<img width="459" height="22" alt="image" src="https://github.com/user-attachments/assets/8cb1be82-2a9d-4c6e-857c-ab9b48f03020" /><br><br>
+
 ● Research: What is ETL and how does Power Query support it?<br>
+- **ETL** stands for **Extract, Transform, and Load**, a process used to prepare data for analysis. **Extract** means collecting data from different sources such as Excel files, databases, websites, or CSV files. **Transform** involves cleaning and modifying the data by removing duplicates, filtering rows, changing data types, merging tables, or splitting columns. **Load** is the final step where the processed data is placed into a system like Excel tables, dashboards, or databases. **Power Query** supports ETL by allowing users to import data from various sources, clean and transform it using built-in tools, and load the prepared data into Excel or Power BI. It also records each step automatically so the same process can be repeated when new data is added.<br><br>
+
+# Merge and Append Queries
 
 Part 1: Load Data<br>
-<img width="1919" height="1014" alt="image" src="https://github.com/user-attachments/assets/453d8f0a-64d7-4059-b39a-2b645850298b" /><br><br>
+<img width="1909" height="769" alt="image" src="https://github.com/user-attachments/assets/dd7b6d53-d9bf-45d8-bc4f-d5b34974e1ce" /><br>
+<img width="1919" height="780" alt="image" src="https://github.com/user-attachments/assets/c4b4241c-fc00-4fbc-9bef-c9282c4bb2e2" /><br><br>
+
 
 Part 2: Merge Datasets (Inner Join)<br>
-<img width="907" height="841" alt="image" src="https://github.com/user-attachments/assets/bc1a9efb-e405-42b4-9298-bd03bbe12894" /><br>
-<img width="560" height="388" alt="image" src="https://github.com/user-attachments/assets/55020514-7b25-41b2-b3cd-b5648d3b6bfc" /><br>
-<img width="1674" height="825" alt="image" src="https://github.com/user-attachments/assets/da5e07f9-a147-40ea-8d2c-afa33d59d2cc" /><br><br>
+<img width="1689" height="777" alt="image" src="https://github.com/user-attachments/assets/3de5e8a0-1511-4391-913d-1d6f208b7acd" /><br><br>
 
 Part 3: Append Monthly Sales Files<br>
-
-1. Click Append Queries → Append as New.<br>
-<img width="883" height="297" alt="image" src="https://github.com/user-attachments/assets/8f0fe944-a05b-4d4f-ba9a-6e4051864731" /><br><br>
-
-2. Select multiple monthly sales tables.<br>
-<img width="638" height="579" alt="image" src="https://github.com/user-attachments/assets/58569bf7-32ae-4d1f-9985-eac16c5fc18e" /><br><br>
-
-3. Confirm the combined table.<br>
-<img width="1918" height="1025" alt="image" src="https://github.com/user-attachments/assets/80c0753f-52b4-4420-b33b-586b0abc28d5" /><br><br>
+<img width="1919" height="783" alt="image" src="https://github.com/user-attachments/assets/9b5a0d33-c6cc-4dda-8b9f-9b0820db6886" /><br><br>
 
 Part 4: Validate Merged Data<br><br>
 
 ● Check row counts.
-<img width="488" height="31" alt="image" src="https://github.com/user-attachments/assets/72b5f5f5-0674-4956-bd98-56a822520f3e" /><br><br>
+<img width="435" height="21" alt="image" src="https://github.com/user-attachments/assets/37e91543-b702-4c47-8af6-7bc0669a989e" /><br><br>
+<img width="459" height="31" alt="image" src="https://github.com/user-attachments/assets/0802f869-69bd-48f1-8ebd-111f2865a3a8" /><br><br>
 
 ● Verify no unexpected null values.<br>
+<img width="432" height="737" alt="image" src="https://github.com/user-attachments/assets/2b72b6f6-9ba3-4418-aabb-df051af9e622" /><br><br>
+
 ● Confirm matching customer details.<br>
-<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/7ace5a11-dc0c-445f-9556-d1d4e2a80dde" /><br><br>
+<img width="1348" height="445" alt="image" src="https://github.com/user-attachments/assets/241d4cab-451a-43a9-84ff-88a13a24ed40" /><br><br>
+
 
 # Guide Questions
 1. What is the difference between Merge and Append?<br>
@@ -138,10 +152,10 @@ Part 4: Validate Merged Data<br><br>
 
 # Enhancement Activities
 ● Try Left Join and compare results.<br>
-<img width="1919" height="1013" alt="image" src="https://github.com/user-attachments/assets/175a971c-1018-4a49-8543-fc976db477af" /><br><br>
+<img width="1919" height="781" alt="image" src="https://github.com/user-attachments/assets/282bf482-67b5-4ed4-9aad-c2a3f10f4eba" /><br><br>
 
 ● Identify unmatched records.
-<img width="1669" height="754" alt="image" src="https://github.com/user-attachments/assets/e6c80223-515e-4679-82c4-0f40da9a4cb1" /><br><br>
+<img width="1362" height="758" alt="image" src="https://github.com/user-attachments/assets/be552937-55b6-4764-b02e-ea09ba3beedf" /><br><br>
 
 ● Create a diagram showing join types.
 <img width="1260" height="1003" alt="image" src="https://github.com/user-attachments/assets/c0661b4d-e690-421d-9cf1-3bed08c64e4c" />
