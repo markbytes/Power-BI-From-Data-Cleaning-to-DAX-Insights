@@ -1,6 +1,9 @@
 # Power-BI-From-Data-Cleaning-to-DAX-Insights
 Laboratory Work 2 - End-to-End Data Analytics in Power BI: From Data Cleaning to DAX Insights
 
+# PDF Documentation
+https://drive.google.com/file/d/1EHI1uIRzz6WdyqE3z37BjLwSXWFNtgEb/view?usp=sharing<br><br>
+
 Part 1: Open Power Query Editor<br><br>
 
 1. Open Power BI Desktop.<br>
